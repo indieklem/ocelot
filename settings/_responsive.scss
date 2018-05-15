@@ -1,0 +1,29 @@
+/* ===============
+   Responsive
+   A lire de cette façon : "Cette regle s'applique à tout ce qui est au dessus de $point ..."
+   =============== */
+
+
+
+@mixin breakpoint($point) {
+	@if $point 			== extra  {
+        // Extra large devices (large desktops, 1200px and up)
+		@media (min-width: 1200px) { @content ; }
+	}
+	@else if $point 	== large   {
+		// Large devices (desktops, 992px and up)
+        @media (min-width: 992px) { @content ; }
+	}
+	@else if $point 	== medium  {
+		// Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) { @content ; }
+	}
+	@else if $point 	== small   {
+		// Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) { @content ; }
+    } 
+    @else if $point 	== mobile {
+		// Mobile only
+        @media only screen and (max-width: 767px) { @content ; }
+	} 
+}

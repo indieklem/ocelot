@@ -1,0 +1,65 @@
+/* ===============
+   Margins 
+   =============== */
+
+$spacer: 15px !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+), $spacers);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$grid-breakpoints-abbrev: (
+  xs: '',
+  sm: '-sm',
+  md: '-md',
+  lg: '-lg',
+  xl: '-xl'
+) !default;
+
+@mixin respond-to($breakpoint) { 
+    @if map-has-key($grid-breakpoints, $breakpoint) {
+        @media (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+            + "Please make sure it is defined in `$breakpoints` map.";
+    }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include respond-to($breakpoint) {
+
+        $abbrev : map-get($grid-breakpoints-abbrev, $breakpoint);
+
+        @each $size, $length in $spacers {
+            .mb#{$abbrev}-#{$size} { 
+                margin-bottom: #{$length}!important
+            }
+            .mt#{$abbrev}-#{$size} { 
+                margin-top: #{$length}!important
+            }
+            .mr#{$abbrev}-#{$size} { 
+                margin-right: #{$length}!important
+            }
+            .ml#{$abbrev}-#{$size} { 
+                margin-left: #{$length}!important;
+            }
+        }
+    }
+}

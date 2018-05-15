@@ -1,0 +1,21 @@
+.c-btn--size-small {
+    min-height: 30px;
+    line-height: 30px;
+}
+
+.c-btn--size-expand {
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .xs-expand{width: 100%}
+}
+@media (min-width: 768px) {
+    .sm-expand{width: 100%}
+}
+@media (min-width: 992px) {
+    .md-expand{width: 100%}
+}
+@media (min-width: 1200px) {
+    .lg-expand{width: 100%}
+}

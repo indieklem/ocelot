@@ -1,0 +1,36 @@
+/* ===============
+   Upload
+   =============== */
+
+.c-upload {
+    @include box--shadow;
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+    padding: 15px 48px 15px 45px;
+    background-color: $color_white;
+    border-radius: 4px;
+    text-align: left;
+    font-family: $font--regular;
+
+    .c-upload__icon {
+        @include translate--y;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        display: block;
+        width: 15px;
+        height: auto;
+    }
+
+    .c-upload__delete {
+        @include translate--y;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        display: block;
+        width: 18px;
+        height: auto;
+        cursor: pointer;
+    }
+}

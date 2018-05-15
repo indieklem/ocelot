@@ -1,0 +1,105 @@
+/*doc
+---
+title: Button
+name: Button
+category: Components
+---
+
+```html_example
+<button class="c-btn c-btn--white">
+    Btn white
+</button>
+```
+```html_example
+<button class="c-btn c-btn--blue">
+    Btn blue
+</button>   
+```
+```html_example
+<button class="c-btn c-btn--outline">
+    Btn outline
+</button>  
+```
+```html_example
+<button class="c-btn c-btn--white">
+    <img class="c-btn__icon mr15" src="styles/assets/images/icons/chevron--left--blue.svg" alt="">Icon left
+</button>
+<button class="c-btn c-btn--outline">
+    <img class="c-btn__icon mr15" src="styles/assets/images/icons/chevron--left--blue.svg" alt="">Icon left
+</button> 
+<button class="c-btn c-btn--blue">
+    Icon right<img class="c-btn__icon ml15" src="styles/assets/images/icons/chevron--right--white.svg" alt="">
+</button>   
+```
+
+
+*/
+
+.c-btn {
+    @include box--shadow;
+    @include transition;
+
+    position: relative;
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+    padding: 0 $space_m;
+    border-radius: 40px;
+
+    width: auto;
+    height: 50px;
+
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: $color_white;
+    font-size: $font_s;
+    font-family: $font--regular;
+
+    white-space: nowrap;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+        @include translate--y(1px);
+        @include box--shadow('hover');
+    }
+
+    &:active,
+    &:focus {
+        @include box--shadow('active');
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+
+/*--------------------
+ELEMENT
+--------------------*/
+
+@import '__icon/btn__icon';
+
+
+
+/*--------------------
+MODIFIER
+--------------------*/
+
+@import '__icon/_left/btn__icon_left';
+@import '__icon/_right/btn__icon_right';
+@import '_color/btn_color';
+@import '_loading/btn_is-loading';
+@import '_disabled/btn_is-disabled';
+
+@import '--size/btn--size';
+
+

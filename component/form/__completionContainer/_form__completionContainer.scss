@@ -1,0 +1,28 @@
+.c-form__completionContainer {
+    @include flexbox;
+    justify-content: flex-start;
+
+    .c-form__input {
+        @include flex(1 1 auto);
+        /* The !important must be delete in the futur, it's a fix for bootstrap. */
+        border-radius: 4px 0 0 4px !important;
+        width: auto;
+        min-width: 100px;
+
+        + .c-form__completion {
+            @include border--radius(0 4px 4px 0);
+            border-right: 1px solid $color_grey_light;
+            border-left: 0;
+        }
+    }
+
+    .c-form__completion {
+        @include border--radius(4px 0 0 4px);
+        border-right: 0;
+
+        + .c-form__input {
+            /* The !important must be delete in the futur, it's a fix for bootstrap. */
+            border-radius: 0 4px 4px 0 !important;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.c-form__line{
+	position: relative;
+}
+
+.c-form__delete {
+	position: absolute;
+	bottom: 11px;
+	right: -48px;
+	display: block;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+}
+

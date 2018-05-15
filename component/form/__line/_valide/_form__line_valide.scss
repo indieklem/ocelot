@@ -1,0 +1,13 @@
+.c-form__line_valide{
+	&#{&} {
+		.c-form__label{
+		    color:$color_green;
+		}
+		.c-form__input{
+		    border:1px solid $color_green;
+		}
+		.c-form__info_valide{
+			display: block;
+		}
+	}
+}

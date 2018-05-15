@@ -1,0 +1,103 @@
+.c-form__field--checkbox {
+
+    margin-bottom: -15px;
+    @include breakpoint(medium) {
+        margin-bottom: -5px;
+    }
+
+    .c-form__input {
+
+        position: absolute;
+        left: -9999px;
+        visibility: hidden;
+        opacity: 0;
+        padding: 0;
+        width:   0;
+        height:  0;
+
+        + .c-form__label {
+            @include font_sofia;
+            position: relative;
+            cursor: pointer;
+            padding-left: 30px;
+            min-height:   20px;
+            color: $color_black;
+            font-weight: normal;
+            font-size: $font_s;
+            margin-bottom: 15px;
+
+            @include breakpoint(medium) {
+                margin-bottom: 5px;
+                font-size: $font_xs;
+            }
+
+            &::after {
+                @include border--radius(2px);
+                @include transition;
+                @include translate--y;
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                z-index: 1;
+                border: 1px solid $color_grey_shady;
+                background: $color_white;
+                width: 16px;
+                height: 16px;
+                content: '';
+            }
+
+            &::before {
+                @include transition;
+                @include translate--y;
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 3px;
+                visibility: hidden;
+                opacity: 0;
+                z-index: 2;
+                background-image:    url('/public/images/form/check.svg');
+                background-repeat:   no-repeat;
+                background-position: center;
+                background-size:     contain;
+                width:  10px;
+                height: 10px;
+                color: $color_white;
+                content: '';
+            }
+        }
+        
+        &:checked {
+            & + .c-form__label {
+                &::after {
+                    border: 1px solid $color_blue_light;
+                }
+
+                &::before {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+    .c-form__input--tag{
+        + .c-form__label{
+            background-color: $color_grey_dazzling;
+            border:1px solid $color_grey_light;
+            padding: 10px 10px 10px 30px;
+            border-radius: 4px;
+
+            &::after {left: 5px;}
+            &::before {left: 8px;}
+        }
+    }
+
+    .c-form__input--tag-notWanted{
+        + .c-form__label{
+            border:1px solid $color_red;
+        }
+    }
+}

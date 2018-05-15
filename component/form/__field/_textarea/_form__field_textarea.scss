@@ -1,0 +1,10 @@
+.c-form__field--textarea {
+    .c-form__input {
+        @include transition(all, 0s, ease-in, 0s);
+        padding: 15px;
+        min-width: 100%;
+        max-width: 100%;
+        height: 150px;
+        min-height: 150px;
+    }
+}

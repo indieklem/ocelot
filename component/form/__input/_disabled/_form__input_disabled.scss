@@ -1,0 +1,10 @@
+.c-form__input_disabled{
+    &:disabled{
+      border: none;
+      background-color: $color_grey_dazzling;
+      &:hover{
+        border: none;
+        cursor: default;
+      }
+    }
+}

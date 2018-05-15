@@ -1,0 +1,53 @@
+/*doc
+---
+title: Select
+name: Select
+category: Form
+---
+
+```html_example
+<div class="c-form__line">
+    <div class="c-form__labelContainer">
+        <label for="poiuhgjbnk" class="c-form__label">Category</label>
+        <div class="c-form__help">
+            <img class="c-form__iconHelp" src="styles/assets/images/icons/helper.svg" alt="">
+        </div>
+    </div>  
+    <div class="c-form__field c-form__field--select">
+        <select name="poiuhgjbnk" id="poiuhgjbnk" class="c-form__input">
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+            <option value="">Option 3</option>
+        </select>
+    </div>
+    <div class="c-form__info c-form__info--error">
+        <img class="c-form__iconError" src="styles/assets/images/icons/alert.svg" alt=""><span class="c-form__textError">Une erreur est survenue</span>
+    </div>
+</div>
+```
+
+*/
+
+.c-form__field--select {
+    .c-form__input{
+        background-color: $color_grey_dazzling;
+        background-image: url('assets/images/icons/arrow--select.svg');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 15px) center;
+        padding-right: 40px;
+
+        &:-moz-focusring {
+            text-shadow: 0 0 0 $color_black;
+            color: transparent;
+        }
+
+        &:hover {
+            background-image: url('assets/images/icons/arrow--select.svg');
+        }
+
+        &:focus,
+        &:active {
+            background-image: url('assets/images/icons/arrow--select.svg');
+		}
+	}
+}

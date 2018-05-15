@@ -1,0 +1,12 @@
+.c-form__completion {
+    position: relative;
+    margin: 0;
+    border: 1px solid $color_grey_light;
+    box-shadow: none;
+    background: $color_grey_bright;
+    padding: 0 12px;
+    height: 42px;
+    line-height: 42px;
+    color: $color_black;
+    font-size: 14px;
+}

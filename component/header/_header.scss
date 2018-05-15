@@ -1,0 +1,153 @@
+/*doc
+---
+title: Header
+name: Header
+category: Components
+---
+
+```html_example
+<header class="c-header">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-auto">
+                <div class="row align-items-center align-items-start">
+                    <div class="col-auto">
+                        <img src="styles/assets/images/logo.svg" alt="Logo" class="c-header__logo">
+                    </div>
+                    <div class="col-auto">
+                        <nav class="c-header__nav">
+                            <ul class="c-header__ul">
+                                <li class="c-header__li">
+                                    <a class="c-header__link c-header__link--active" href="#">Menu</a>
+                                </li>
+                                <li class="c-header__li">
+                                    <a class="c-header__link" href="#">My projects</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="row align-items-center align-items-start">
+                    <div class="col-auto p0">
+                        <div class="c-header__profil">
+                            <img src="styles/assets/images/icons/user.svg" alt="" class="c-header__user">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="c-header__name">Katherine Garcia</div>
+                        <div class="c-link mt5">Log out</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+```
+
+*/
+
+.c-header {
+    @include box--shadow;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 85px;
+    background-color: $color_white;
+
+    .container,
+    .row {
+        height: 100%;
+    }
+
+    .c-header__logo {
+        height: 60px;
+        width: auto;
+    }
+
+    .c-header__nav {
+        margin-left: $space_xl;
+    }
+
+    .c-header__ul {
+        list-style: none;
+    }
+    .c-header__li {
+        display: inline-block;
+        padding: 0 $space_s;
+    }
+
+    .c-header__link {
+        @include transition;
+        position: relative;
+        display: inline-block;
+        height: 85px;
+        line-height: 85px;
+        text-decoration: none;
+        color: $color_black;
+        cursor: pointer;
+
+        &:after {
+            @include transition;
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            border-radius: 4px;
+            opacity: 0;
+        }
+
+        &:hover {
+            color: $color_grey_shady;
+
+            &:after {
+                width: 100%;
+                background-color: $color_grey_shady;
+                opacity: 1;
+            }
+        }
+
+        &.c-header__link--active {
+            color: $color_blue;
+
+            &:after {
+                width: 100%;
+                background-color: $color_blue;
+                opacity: 1;
+            }
+        }
+    }
+
+    .c-header__profil {
+        @include box--shadow;
+        width: 45px;
+        height: 45px;
+        background-color: $color_grey_bright;
+        border-radius: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .c-header__user {
+        @include translate--y;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 22px;
+        height: auto;
+    }
+
+    .c-header__name {
+
+    }
+}

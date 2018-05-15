@@ -1,0 +1,136 @@
+/*doc
+---
+title: Footer
+name: Footer
+category: Components
+---
+
+```html_example
+<footer class="c-footer">
+    <div class="container mb60">
+        <div class="row">
+            <div class="col-md-2 sm-mb0 mb60">
+                <img src="styles/assets/images/logo.svg" alt="Logo" class="c-footer__logo">
+            </div>
+            <div class="col-md-3 sm-mb0 mb30">
+                <div class="c-title c-title--s mb15">
+                    Get Started
+                </div>
+                <ul class="c-footer__list">
+                    <li class="c-footer__item mb10">
+                        <a href="#" class="c-link c-link--footer">Create a new project</a>
+                    </li>
+                    <li class="c-footer__item mb10">
+                        <a href="#" class="c-link c-link--footer">How it works</a>
+                    </li>
+                    <li class="c-footer__item mb10">
+                        <a href="#" class="c-link c-link--footer">User guide and contest rules</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 sm-mb0 mb30">
+                <div class="c-title c-title--s mb15">
+                    Legal
+                </div>
+                <ul class="c-footer__list">
+                    <li class="c-footer__item mb10">
+                        <a href="#" class="c-link c-link--footer">Privacy Policy</a>
+                    </li>
+                    <li class="c-footer__item mb10">
+                        <a href="#" class="c-link c-link--footer">Plastic Omnium graphical charter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="c-title c-title--s mb15">
+                    Support
+                </div>
+                <ul class="c-footer__list">
+                    <li class="c-footer__item c-footer__item--icon mb10">
+                        <img src="styles/assets/images/icons/user--small.svg" alt="" class="c-footer__img">
+                        <div>
+                            John Doe<br>
+                            Technical support
+                        </div>
+                    </li>
+                    <li class="c-footer__item c-footer__item--icon mb10">
+                        <img src="styles/assets/images/icons/@.svg" alt="" class="c-footer__img">
+                        <a href="#" class="c-link u-breakword">
+                            contact@plasticomnium.com
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="c-footer__copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    All right reserved - Plastic Omnium - 2018
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+```
+
+*/
+
+.c-footer {
+    position: relative;
+    padding: 60px 0 0;
+    background-color: $color_white;
+    border-top: 1px solid $color_grey_light;
+    border-bottom: 1px solid $color_grey_light;
+    text-align: center;
+
+    @include breakpoint(medium) {
+        text-align: left;
+    }
+
+    .c-footer__logo {
+        display: block;
+        width: 75px;
+        margin:0 auto;
+
+        @include breakpoint(medium) {
+            margin: 0;
+        }
+    }
+
+    .c-footer__list {
+        
+    }
+
+    .c-footer__item {
+        color: $color_grey_dark;
+        line-height: 20px;
+
+        &.c-footer__item--icon {
+            @include flexbox;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+
+            @include breakpoint(medium) {
+                justify-content: start;
+            }
+        }
+    }
+
+    .c-footer__img {
+        display: inline-block;
+        width: 15px;
+        height: auto;
+        margin-right: 15px;
+    } 
+
+    .c-footer__copyright {
+        padding: 15px;
+        background-color: $color_grey_dazzling;
+        border-top: 1px solid $color_grey_light;
+        color: $color_grey_dark;
+        text-align: center;
+    }
+}

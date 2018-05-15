@@ -1,0 +1,49 @@
+/*doc
+---
+title: Multiple
+name: Multiple
+category: Form
+---
+
+```html_example
+<div class="row">
+
+    <div class="col">
+        <div class="c-form__line mb30">
+            <div class="c-form__labelContainer">
+                <label for="" class="c-form__label">Team member name</label>
+            </div>  
+            <div class="c-form__field">
+                <input type="text" class="c-form__input">
+            </div>
+            <div class="c-form__info c-form__info--error">
+                <img class="c-form__iconError" src="styles/assets/images/icons/alert.svg" alt=""><span>Une erreur est survenue</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="c-form__line mb30">
+            <div class="c-form__labelContainer">
+                <label for="" class="c-form__label">Site</label>
+                <div class="c-form__help">
+                    <img class="c-form__iconHelp" src="styles/assets/images/icons/helper.svg" alt="">
+                </div>
+            </div>  
+            <div class="c-form__field c-form__field--select">
+                <select name="" id="" class="c-form__input">
+                    <option value="">PO AUTO EXTERIEUR SA 1</option>
+                    <option value="">Option 2</option>
+                    <option value="">Option 3</option>
+                </select>
+            </div>
+            <div class="c-form__info c-form__info--error">
+                <img class="c-form__iconError" src="styles/assets/images/icons/alert.svg" alt=""><span>Une erreur est survenue</span>
+            </div>
+            <img class="c-form__delete" src="styles/assets/images/icons/cross.svg" alt="">
+        </div>
+    </div>
+
+</div>
+```
+*/

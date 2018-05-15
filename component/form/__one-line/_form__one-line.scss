@@ -1,0 +1,14 @@
+/*
+
+Attente de refonte par @RPons
+
+*/
+.c-form__line_multiple{
+    .row{
+        margin-left:0;
+        margin-right: 0;
+    }
+    [class*="col-"]{
+        padding:0;
+    }
+}

@@ -1,0 +1,37 @@
+@mixin is_loading($main, $shady, $dark) {
+
+    background: $main;
+    color: transparent !important;
+
+    &:hover {
+        @include translate--y(0);
+        @include box--shadow;
+    }
+
+    &:active,
+    &:focus {
+        @include box--shadow;
+        text-decoration: none;
+    }
+
+    .s-loader {
+        @include translate--y;
+        position: absolute;
+        top:    50%;
+        right:  0;
+        left:   0;
+        margin: 0 auto;
+
+        .s-loader__round {
+            background-color: $dark;
+
+            &::after {
+                background-color: $main;
+            }
+        }
+    }
+}
+
+.c-btn_is-loading {
+    &.c-btn_white     {@include is_loading($color_white,    $color_grey,                  $color_grey_shady)}
+}

@@ -1,0 +1,42 @@
+@mixin btn--disabled($main, $shady, $dark) {
+
+    opacity: .6;
+    background: $main;
+    cursor: not-allowed;
+
+    &:hover {
+        @include translate--y(0);
+        @include box--shadow;
+    }
+
+    &:active,
+    &:focus {
+        @include box--shadow;
+        text-decoration: none;
+    }
+
+    @if $main == $color_white {
+        border: 1px solid $color_grey_light;
+        color: $color_black;
+
+        &:hover,
+        &:active,
+        &:focus {
+            border: 1px solid $color_grey_light;
+            color: $color_black;
+        }
+    } @else {
+        &:hover,
+        &:active,
+        &:focus {
+            border: 1px solid $shady;
+            background: $main;
+        }
+    }
+
+}
+
+.c-btn--disabled {
+    &.c-btn--white     {@include btn--disabled($color_white,    $color_grey,                  $color_grey_shady)}
+}
+

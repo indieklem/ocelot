@@ -1,0 +1,25 @@
+.c-form__line_disabled{	
+	/* The specificity &#{&} must be delete in the futur.
+    There is a probleme with bootstrap overide.
+    */
+	&#{&} {
+		.c-form__input{
+		    border:1px solid $color_grey_light;
+		    color:$color_grey_shady;
+		    cursor: not-allowed;
+		    &:focus,
+			&:active,
+			&:hover{
+				border:1px solid $color_grey_light;
+			}
+		}
+		.c-form__label{
+			color:$color_grey_shady;
+		}
+		.c-form__field{
+			opacity: 0.6;
+		}
+	}
+}
+
+

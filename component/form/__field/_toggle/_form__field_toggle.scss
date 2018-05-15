@@ -1,0 +1,65 @@
+.c-form__field_toggle {
+
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+
+    .c-form__input {
+
+        display:    none;
+        position:   absolute;
+        visibility: hidden;
+        opacity: 0;
+        margin:  0;
+        padding: 0;
+        width:   0;
+        height:  0;
+
+        &:not(:checked),
+        &:checked {
+
+            + .c-form__label {
+
+                &::before {
+                    @include border--radius(20px);
+                    @include translate--y;
+                    @include transition;
+                    position: absolute;
+                    top:    50%;
+                    left:   0;
+                    background: $color_grey;
+                    cursor:     pointer;
+                    width:  40px;
+                    height: 20px;
+                    content:  '';
+                }
+
+                &::after {
+                    @include border--radius(100%);
+                    @include translate--y;
+                    @include transition;
+                    position: absolute;
+                    top:    50%;
+                    left:   2px;
+                    background: $color_white;
+                    cursor:     pointer;
+                    width:  16px;
+                    height: 16px;
+                    content:  '';
+                }
+            }
+        }
+
+        
+        &:checked + .c-form__label {
+            &::before {
+                background: $color_green;
+            }
+
+            &::after {
+                left: 22px;
+            }
+        }
+    }
+}
+

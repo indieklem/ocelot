@@ -1,0 +1,11 @@
+/* ===============
+   Form container
+   =============== */
+
+
+
+.p-formContainer {
+    @include box--shadow;
+    padding: 60px 0;
+    background-color: $color_white;
+}

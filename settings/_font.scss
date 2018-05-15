@@ -1,0 +1,52 @@
+/* ===============
+   Font location
+   =============== */
+
+@font-face {
+    font-family: 'comfortaabold';
+    src: url('assets/fonts/comfortaa-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/comfortaa-bold-webfont.woff')  format('woff');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+@font-face {
+    font-family: 'comfortaalight';
+    src: url('assets/fonts/comfortaa-light-webfont.woff2') format('woff2'),
+         url('assets/fonts/comfortaa-light-webfont.woff')  format('woff');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+@font-face {
+    font-family: 'comfortaaregular';
+    src: url('assets/fonts/comfortaa-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/comfortaa-regular-webfont.woff')  format('woff');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+
+
+/* ===============
+   Font var
+   =============== */
+
+$font--regular: 'comfortaaregular';
+$font--bold:    'comfortaabold';
+$font--light:   'comfortaalight';
+
+
+
+/* ===============
+   Font size
+   =============== */
+
+$font_xxxs:  10px;
+$font_xxs :  12px;
+$font_xs  :  14px;
+$font_s   :  16px;
+$font_m   :  18px;
+$font_l   :  20px;
+$font_xl  :  24px;
+$font_xxl :  32px;

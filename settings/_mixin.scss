@@ -1,0 +1,114 @@
+/* ===============
+   Mixins
+   =============== */
+
+@mixin border--radius($radius:4px) {
+	border-radius: $radius;
+}
+
+@mixin font_droid(){
+	font-family: 'DroidSerif', sans-serif;
+}
+
+@mixin font_sofia(){
+	font-family: 'sofia_prolight', sans-serif !important;
+}
+
+@mixin transition($elm: all, $duration:0.15s, $effect:ease-in, $delais:0s) {
+  -webkit-transition:$elm $duration $effect $delais;
+  -moz-transition:   $elm $duration $effect $delais;
+  -o-transition:     $elm $duration $effect $delais;
+  transition:        $elm $duration $effect $delais;
+}
+
+@mixin rotate($degre){ 
+	-webkit-transform:  rotate($degre) ;
+	   -moz-transform:  rotate($degre) ;
+		-ms-transform:  rotate($degre) ;
+		 -o-transform:  rotate($degre) ;
+			transform:  rotate($degre) ;
+}
+
+@mixin translate--x($percentage: -50%){ 
+	-webkit-transform:  translateX($percentage);
+	   -moz-transform:  translateX($percentage);
+		-ms-transform:  translateX($percentage);
+		 -o-transform:  translateX($percentage);
+			transform:  translateX($percentage);
+}
+
+@mixin translate--y($percentage: -50%){ 
+	-webkit-transform:  translateY($percentage);
+	   -moz-transform:  translateY($percentage);
+		-ms-transform:  translateY($percentage);
+		 -o-transform:  translateY($percentage);
+			transform:  translateY($percentage);
+}
+
+@mixin scale($x: 0, $y: 0){ 
+  -webkit-transform: scale($x,$y);
+	 -moz-transform: scale($x,$y);
+	   -o-transform: scale($x,$y);
+	  -ms-transform: scale($x,$y);
+		  transform: scale($x,$y);
+}
+
+@mixin box--shadow($shadow: 'normal') {
+    @if $shadow == 'hover' {
+        box-shadow:
+        0 0 0 rgba(28, 44, 79, .1),
+        0 0 0 rgba(0,   0,  0, .08);
+    } @else if $shadow == 'none' {
+        box-shadow: none;
+    } @else if $shadow == 'active' {
+        box-shadow:
+        0 1px 2px rgba(0,   0,  0, .08) inset,
+        0 1px 4px rgba(28, 44, 79, .1) inset;
+    } @else {
+        box-shadow:
+        0 2px 4px rgba(0, 0, 0, .2);
+    }
+}
+
+.clear:after{
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+@mixin gradient--angle($color,$color2) {
+    background: $color; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(135deg, $color 0%, $color2 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(135deg, $color 0%, $color2 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(135deg, $color 0%, $color2 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, $color 0%, $color2 100%); /* Standard syntax */
+}
+
+
+@mixin flexbox {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex($values: 0 1 auto) {
+
+    /*
+    flex-grow
+    flex-shrink
+    flex-basis
+    */
+
+    -webkit-flex:       $values;
+    -webkit-box-flex:   $values;
+    -moz-box-flex:      $values;
+    -ms-flex:           $values;
+    flex:               $values;
+}

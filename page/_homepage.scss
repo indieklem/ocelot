@@ -1,0 +1,237 @@
+/* ===============
+   Block participate
+   =============== */
+
+.blockParticipate {
+    position: relative;
+    width: 100%;
+    min-height: unset;
+    height: unset;
+    max-height: unset;
+    padding: 60px 0;
+    background-image: url('assets/images/participate.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $color_white;
+    text-align: center;
+
+    @include breakpoint(medium) {
+        min-height: 400px;
+        height: 800px;
+        max-height: calc(100vh - 85px);
+        padding: 120px 0;
+    }
+
+    .blockParticipate__text {
+        max-width: 570px;
+        margin: 15px auto 60px;
+        font-size: $font_xl;
+        line-height: 32px;
+    }
+
+    .blockParticipate__above {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 30px;
+        background-image: url('assets/images/fold.svg');
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+        @include breakpoint(medium) {
+            height: 60px;
+        }
+    }
+}
+
+
+
+/* ===============
+   Block How It works
+   =============== */
+
+.howItWorks {
+    position: relative;
+    padding: 60px 0 0;
+    text-align: center;
+
+    @include breakpoint(medium) {
+        text-align: left;
+    } 
+
+    .howItWorks__item {
+        margin-bottom: $space_xl;
+
+        &.howItWorks__item--right {
+            padding-left: unset;
+
+            @include breakpoint(medium) { 
+                padding-left: 30px;
+            }
+        }
+    }
+    .howItWorks__icon {
+        display: block;
+        margin: 0 auto $space_s;
+
+        @include breakpoint(medium) { 
+            margin: 0 0 $space_s;;
+        }
+    }
+    .howItWorks__step {
+        margin-bottom: $space_xxs;
+        font-family: $font--bold;
+        font-size: $font_xl;
+        color: $color_black;
+    }
+    .howItWorks__txt {
+        max-width: 200px;
+        margin: 0 auto;
+        color: $color_grey_dark;
+        line-height: 24px;
+
+        @include breakpoint(medium) { 
+            max-width: unset;
+            margin: unset;
+        }
+    }
+
+    .howItWorks__video {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto 120px;
+        width: calc(100% - 30px);
+        max-width: 510px;
+        height: 280px;
+        border-radius: 4px;
+        background-color:#ddd;
+
+        @include breakpoint(large) { 
+            position: absolute;
+            top: 60px;
+            left: unset;
+            width: 280px;
+            height: calc(100% - 120px);
+            
+        }
+
+        @include breakpoint(extra) { 
+            width: 370px;
+            margin: 0;
+            border-radius: 4px 0 0 4px;
+        }
+    }
+
+    .howItWorks__arrow {
+        @include transition;
+        @include translate--y;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 90px;
+        height: 90px;
+        background-color: $color_blue;
+        background-image: url('assets/images/icons/play.svg');
+        background-position: 55% center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color_blue_dark;
+        }
+
+        @include breakpoint(large) { 
+            left: -45px;
+            right: unset;
+            margin: unset;
+        }
+    }
+    
+}
+
+
+
+/* ===============
+   Block Timer
+   =============== */
+
+.blockTimer {
+    position: relative;
+    margin-top: 60px;
+    padding: 60px 0;
+    background-color: $color_grey_bright;
+
+    .blockTimer__icon {
+        display: block;
+        width: auto;
+        max-height: 40px;
+    }
+
+
+    .blockTimer__bgGrey {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -60px;
+        width: 100%;
+        height: 60px;
+        background-image: url('assets/images/bgGrey.svg');
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+/* ===============
+   Block Stat
+   =============== */
+
+.blockStat {
+    padding: 60px 0;
+    background-color: $color_blue;
+    text-align: center;
+
+    @include breakpoint(medium) { 
+        padding: 60px 0 120px;
+    }
+
+    .blockStat__number {
+        margin-bottom: $space_xs;
+        color: $color_white;
+        font-family: $font--bold;
+        font-size: 48px;
+
+        @include breakpoint(medium) { 
+            font-size: 64px;
+        }
+    }
+    .blockStat__text {
+        color: $color_blue_light;
+        font-size: $font_l;
+        line-height: normal;
+    }
+}
+
+
+
+/* ===============
+   Block Comment
+   =============== */
+
+.blockComment {
+    position: relative;
+    margin-top: -30px;
+    top: -30px;
+}

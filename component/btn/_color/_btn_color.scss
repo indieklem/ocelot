@@ -1,0 +1,38 @@
+@mixin btn--color($main, $shady, $dark) {
+
+    background: $main;
+
+    @if $main == $color_white {
+        //border: 1px solid $color_grey_light;
+        color: $color_blue;
+
+        &:hover {
+            //border: 1px solid $color_grey;
+        }
+
+        &:active {
+            //border: 1px solid $color_grey_shady;
+            background: $color_grey_dazzling;
+        }
+    } @else if $main == $color_blue {
+        color: $shady;
+    } @else {
+        border: 2px solid $shady;
+        color: $shady;
+        line-height: 46px;
+
+        &:hover {
+            //border: 2px solid $dark;
+        }
+
+        &:active,
+        &:focus {
+            //border: 2px solid $dark;
+        }
+    }
+
+}
+
+.c-btn--white     {@include btn--color($color_white,    $color_grey, $color_grey_shady)}
+.c-btn--outline   {@include btn--color(transparent,    $color_blue, $color_blue_dark)}
+.c-btn--blue      {@include btn--color($color_blue,    $color_white, $color_blue_dark)}

@@ -1,0 +1,54 @@
+/*--------------------
+TEXT
+--------------------*/
+
+.u-droid {@include font_droid;}
+
+.txt--bold      {font-weight: bold!important;}
+.txt--s         {text-decoration: line-through;}
+
+/*--------------------
+TEXT ALIGN
+--------------------*/
+
+.txt--right     {text-align:right!important;}
+.txt--left      {text-align:left!important;}
+.txt--center    {text-align:center!important;}
+
+@media (min-width: 576px) {
+    .xs-txt--right     {text-align:right!important;}
+    .xs-txt--left      {text-align:left!important;}
+    .xs-txt--center    {text-align:center!important;}
+}
+@media (min-width: 768px) {
+    .sm-txt--right     {text-align:right!important;}
+    .sm-txt--left      {text-align:left!important;}
+    .sm-txt--center    {text-align:center!important;}
+}
+@media (min-width: 992px) {
+    .md-txt--right     {text-align:right!important;}
+    .md-txt--left      {text-align:left!important;}
+    .md-txt--center    {text-align:center!important;}
+}
+@media (min-width: 1200px) {
+    .lg-txt--right     {text-align:right!important;}
+    .lg-txt--left      {text-align:left!important;}
+    .lg-txt--center    {text-align:center!important;}
+}
+
+
+
+
+.txt--uppercase {
+    display: inline-block;
+    text-transform: uppercase;
+}
+.txt--uppercase-letter {
+    display: inline-block;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+.txt-size--16 {
+    font-size:16px !important;
+}

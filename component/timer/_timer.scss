@@ -1,0 +1,24 @@
+/* ===============
+   Timer
+   =============== */
+
+.c-timer {
+    @include box--shadow;
+    display: inline-block;
+    margin: 0 $space_m;
+    padding: $space_m;
+    background-color: $color_white;
+    border-radius: 4px;
+    text-align: center;
+
+    .c-timer__number {
+        margin-bottom: 10px;
+        color: $color_blue;
+        font-family: $font--bold;
+        font-size :64px;
+    }
+
+    .c-timer__text {
+        font-size: 20px;
+    }
+}
