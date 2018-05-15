@@ -1,35 +1,10 @@
-/*doc
----
-title: Color
-name: Color
-category: Settings
----
+/* ===============
+   Main colors
+   =============== */
 
-##Colors
+$color_black:         #002648;
 
-                                                    | Color name      | Color code      | Variable name
-----------------------------------------------------| --------------- | --------------- | ---------- |
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#002648"></div> | Black           | #002648         | `$color_black`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#fff"></div>    | White           | #fff            | `$color_white`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#fafafa"></div> | Grey dazzling   | #fafafa         | `$color_grey_dazzling`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#eee"></div>    | Grey bright     | #eee            | `$color_grey_bright`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#ddd"></div>    | Grey light      | #ddd            | `$color_grey_light`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#bfbfbf"></div> | Grey            | #bfbfbf         | `$color_grey`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#999"></div>    | Grey shady      | #999            | `$color_grey_shady`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#666"></div>    | Grey dark       | #666            | `$color_grey_dark`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#d0e9ff"></div> | Blue light      | #d0e9ff         | `$color_blue_light`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#1691ff"></div> | Blue            | #1691ff         | `$color_blue`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#0e4a7f"></div> | Blue shady      | #0e4a7f         | `$color_blue_dark`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#193b5a"></div> | Blue dark       | #193b5a         | `$color_blue_shady`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#f04134"></div> | Red             | #f04134         | `$color_red`
-<div style="box-shadow:0 1px 2px rgba(0,0,0,0.3);width:15px;height:15px;background-color:#51cf66"></div> | Green           | #51cf66         | `$color_green`
-
-
-*/
-
-$color_black:          #002648;
-
-$color_white:          #fff;
+$color_white:         #fff;
 
 $color_grey_dazzling: #fafafa;
 $color_grey_bright:   #eee;
@@ -38,12 +13,12 @@ $color_grey:          #bfbfbf;
 $color_grey_shady:    #999;
 $color_grey_dark:     #666;
 
-$color_blue_light: #d0e9ff;
-$color_blue:       #1691ff;
-$color_blue_dark:  #0e4a7f;
-$color_blue_shady: #193b5a;
+$color_blue_light:  #d0e9ff;
+$color_blue:        #1691ff;
+$color_blue_dark:   #0e4a7f;
+$color_blue_shady:  #193b5a;
 
-$color_red:       #f04134;
+$color_red:         #f04134;
 
 $color_green:       #51cf66;
 
@@ -52,15 +27,15 @@ $color_green:       #51cf66;
    Social color
    =============== */
 
-$color_twitter: 		#00aced;
+$color_dribbble:		#ea4c89;
 $color_facebook: 		#3b5998;
 $color_googleplus: 		#dd4b39;
-$color_pinterest:		#cb2027;
-$color_linkedin:		#007bb6;
-$color_youtube:		 	#bb0000;
 $color_instagram:		#125688;
-$color_dribbble:		#ea4c89;
-$color_wordpress:		#21759b;
+$color_linkedin:		#007bb6;
 $color_mail:	    	#21759b;
-$color_whatsapp:        #25D366;
 $color_messenger:       #0084ff;
+$color_pinterest:		#cb2027;
+$color_twitter: 		#00aced;
+$color_whatsapp:        #25D366;
+$color_wordpress:		#21759b;
+$color_youtube:		 	#bb0000;
