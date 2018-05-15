@@ -86,21 +86,10 @@ UTILITIES
 }
 
 
-/*--------------------
-IMPORT
---------------------*/
+/* ===============
+   Import mixins 
+   =============== */
 
-/* Color */
-@import 'color/color';
-
-/* Margin */
-@import 'margin/margin';
-
-/* Padding */
-@import 'padding/padding';
-
-/* Size */
-@import 'size/size';
-
-/* Text */
-@import 'text/text';
+@import 'margin';
+@import 'responsive';
+@import 'text';

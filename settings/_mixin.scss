@@ -2,23 +2,24 @@
    Mixins
    =============== */
 
-@mixin border--radius($radius:4px) {
-	border-radius: $radius;
+@mixin respond-to($breakpoint) { 
+    @if map-has-key($grid-breakpoints, $breakpoint) {
+        @media (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+            + "Please make sure it is defined in `$breakpoints` map.";
+    }
 }
 
-@mixin font_droid(){
-	font-family: 'DroidSerif', sans-serif;
-}
-
-@mixin font_sofia(){
-	font-family: 'sofia_prolight', sans-serif !important;
-}
-
-@mixin transition($elm: all, $duration:0.15s, $effect:ease-in, $delais:0s) {
-  -webkit-transition:$elm $duration $effect $delais;
-  -moz-transition:   $elm $duration $effect $delais;
-  -o-transition:     $elm $duration $effect $delais;
-  transition:        $elm $duration $effect $delais;
+@mixin transition($elm: all, $duration:0.30s, $effect:ease-in, $delais:0s) {
+  -webkit-transition: $elm $duration $effect $delais;
+  -moz-transition:    $elm $duration $effect $delais;
+  -o-transition:      $elm $duration $effect $delais;
+  transition:         $elm $duration $effect $delais;
 }
 
 @mixin rotate($degre){ 
@@ -68,17 +69,6 @@
         box-shadow:
         0 2px 4px rgba(0, 0, 0, .2);
     }
-}
-
-.clear:after{
-	clear: both;
-	content: "";
-	display: block;
-	height: 0;
-	line-height: 0;
-	visibility: hidden;
-	padding: 0;
-	margin: 0;
 }
 
 @mixin gradient--angle($color,$color2) {

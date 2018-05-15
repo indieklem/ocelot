@@ -1,6 +1,6 @@
 ## Ocelot.css
 
-Fast css starter for lazy people.
+Ocelot.css is a simple SCSS responsive framework that keep your CSS clean.
 
 * Quick start - wip
 * About - wip
@@ -11,6 +11,19 @@ Fast css starter for lazy people.
 
 ### Quick start
 
+Included :
+- Reset
+- Grid
+- Breakpoint
+- Margin
+- Color
+
+Component :
+- Button
+- Forms
+- Link
+- Title
+
 ---
 
 ### About
@@ -19,7 +32,7 @@ Fast css starter for lazy people.
 
 ### Ressources
 
-I've made this starter with the help of thousand of articles and books that you can find [here](www.google.com).
+This framework have been build with the help of thousand of articles and books that you can find [here](#) .
 
 ---
 

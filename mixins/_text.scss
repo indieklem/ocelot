@@ -1,0 +1,25 @@
+/* ===============
+   Text 
+   =============== */
+
+@mixin font($value) {
+    font-size: ($value * 10) px;
+    font-size: $value rem;
+}
+
+@each $theBreakpoint in map-keys($breakpoints) {
+    @include breakpoint($theBreakpoint) {
+
+        $theAbbrev : map-get($breakpoints--abbrev, $theBreakpoint);
+
+        .txt#{$theAbbrev}-left { 
+            text-align: left!important
+        }
+        .txt#{$theAbbrev}-center { 
+            text-align: center!important
+        }
+        .txt#{$theAbbrev}-right { 
+            text-align: right!important
+        }
+    }
+}
