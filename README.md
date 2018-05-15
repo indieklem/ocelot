@@ -1,11 +1,12 @@
-# Poulpe CSS
+# Ocelot.css
 
-Manage your CSS the good way with this CSS skeleton.
+Fast css starter for lazy people.
 
-* Installation - wip
 * About - wip
-* Analytics - wip
-* Convention Git - wip
+* About - wip
 * [Ressources](/doc/ressources.md)
 
-Made by JACQUELIN Clément.
+---
+
+Contributors : 
+- JACQUELIN Clément
