@@ -18,13 +18,8 @@ $font--sizes: (
   0: 0,
   1: ($font--base * .25),
   2: ($font--base * .5),
-  3: $font--base,
+  3:  $font--base,
   4: ($font--base * 1.5),
   5: ($font--base * 3)
 ) !default;
-
-html {
-    font-size: 62.5%;
-    @include font(1.6);
-}
 

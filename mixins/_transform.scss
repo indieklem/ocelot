@@ -1,0 +1,43 @@
+/* ===============
+   Transform 
+   =============== */
+
+@mixin rotate($degre){ 
+	-webkit-transform:  rotate($degre);
+	   -moz-transform:  rotate($degre);
+		-ms-transform:  rotate($degre);
+		 -o-transform:  rotate($degre);
+			transform:  rotate($degre);
+}
+
+@mixin translate($x: 0, $y: 0){ 
+	-webkit-transform:  translate($x, $y);
+	   -moz-transform:  translate($x, $y);
+		-ms-transform:  translate($x, $y);
+		 -o-transform:  translate($x, $y);
+			transform:  translate($x, $y);
+}
+
+@mixin translate--x($percentage: -50%){ 
+	-webkit-transform:  translateX($percentage);
+	   -moz-transform:  translateX($percentage);
+		-ms-transform:  translateX($percentage);
+		 -o-transform:  translateX($percentage);
+			transform:  translateX($percentage);
+}
+
+@mixin translate--y($percentage: -50%){ 
+	-webkit-transform:  translateY($percentage);
+	   -moz-transform:  translateY($percentage);
+		-ms-transform:  translateY($percentage);
+		 -o-transform:  translateY($percentage);
+			transform:  translateY($percentage);
+}
+
+@mixin scale($x: 0, $y: 0){ 
+    -webkit-transform: scale($x, $y);
+       -moz-transform: scale($x, $y);
+         -o-transform: scale($x, $y);
+        -ms-transform: scale($x, $y);
+            transform: scale($x, $y);
+}

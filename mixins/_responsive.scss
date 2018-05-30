@@ -3,8 +3,8 @@
    =============== */
 
 @mixin breakpoint($breakpoint) { 
-    @if map-has-key($grid-breakpoints, $breakpoint) {
-        @media (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
             @content;
         }
     }

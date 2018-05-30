@@ -2,8 +2,20 @@
    Main import 
    =============== */
 
+@import 'var/var';
 @import 'settings/settings';
-@import 'component/component';
-@import 'utilities/utilities';
+@import 'mixins/mixins';
+// @import 'component/component';
 @import 'page/page';
 @import 'shame/shame';
+
+html {
+    font-size: .625rem; /* fallback IE8+ */
+    font-size: calc(1rem * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+body {
+    font-size: 1.4rem; /* base font-size is equivalent "14px" */
+}
+*{
+    outline:1px solid red;
+}

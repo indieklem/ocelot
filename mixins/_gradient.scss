@@ -1,0 +1,7 @@
+@mixin gradient--angle($color1, $color2, $deg) {
+    background: $color1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($deg, $color1 0%, $color2 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($deg, $color1 0%, $color2 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($deg, $color1 0%, $color2 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($deg, $color1 0%, $color2 100%); /* Standard syntax */
+}

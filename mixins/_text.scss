@@ -2,9 +2,9 @@
    Text 
    =============== */
 
-@mixin font($value) {
-    font-size: ($value * 10) px;
-    font-size: $value rem;
+@mixin font--size($value) {
+    font-size: ($value * 10) + px;
+    font-size: $value + rem;
 }
 
 @each $theBreakpoint in map-keys($breakpoints) {
