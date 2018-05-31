@@ -1,0 +1,13 @@
+/* ===============
+   Colors 
+   - Retrieve color from $colors map ie. `color(base, primary)`
+   - https://codepen.io/jakealbaugh/post/using-sass-functions-to-access-complex-variable-maps
+   =============== */
+
+@function color($color-name, $color-variant:null) {
+    @if ($color-variant != null) {
+        @return map-get(map-get($colors, $color-name), $color-variant);
+    } @else {
+        @return map-get($colors, $color-name);
+    }
+}

@@ -1,40 +1,34 @@
 /* ===============
-   Main colors
+   Colors
    =============== */
 
-$color_black:         #002648;
-
-$color_white:         #fff;
-
-$color_grey_dazzling: #fafafa;
-$color_grey_bright:   #eee;
-$color_grey_light:    #ddd;
-$color_grey:          #bfbfbf;
-$color_grey_shady:    #999;
-$color_grey_dark:     #666;
-
-$color_blue_light:  #d0e9ff;
-$color_blue:        #1691ff;
-$color_blue_dark:   #0e4a7f;
-$color_blue_shady:  #193b5a;
-
-$color_red:         #f04134;
-
-$color_green:       #51cf66;
-   
-   
-/* ===============
-    Social color
-    =============== */
-   
-$color_dribbble:    #ea4c89;
-$color_facebook:    #3b5998;
-$color_googleplus:  #dd4b39;
-$color_instagram:   #125688;
-$color_linkedin:    #007bb6;
-$color_messenger:   #0084ff;
-$color_pinterest:   #cb2027;
-$color_twitter:     #00aced;
-$color_whatsapp:    #25D366;
-$color_wordpress:   #21759b;
-$color_youtube:		#bb0000;
+$colors: (
+    white: #fff,
+    grey: (
+        bright:#eee,
+        light: #ddd,
+        base:  #bfbfbf,
+        shady: #999,
+        dark:  #666
+    ),
+    black:     #222,
+    red:       #f04134,
+    green:     #51cf66,
+    social: (
+        dribbble: #ea4c89,
+        facebook: #3b5998,
+        instagram:#125688,
+        linkedin: #007bb6,
+        messenger:#0084ff,
+        pinterest:#cb2027,
+        slack:    #3aaf85,
+        spotify:  #00e461,
+        twitter:  #00aced,
+        whatsapp: #25D366,
+        wordpress:#21759b,
+        youtube:  #bb0000
+    ),
+    brand: (
+        green:#28C76F,
+    )
+) !default;
