@@ -10,12 +10,8 @@
 @import 'shame/shame';
 
 html {
-    font-size: .625rem; /* fallback IE8+ */
-    font-size: calc(1rem * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    font-size: 62.5%;
 }
 body {
-    font-size: 1.4rem; /* base font-size is equivalent "14px" */
-}
-*{
-    outline:1px solid red;
+    font-size: 1.6rem; /* base font-size is equivalent "14px" */
 }

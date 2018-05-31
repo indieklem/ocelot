@@ -2,6 +2,6 @@
 .DS_Store
 
 # Folders
-.dist/
+.dist
 .sass-cache
 node_modules
