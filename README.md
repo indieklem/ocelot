@@ -1,44 +1,37 @@
-## Ocelot.css
+# Ocelot.css
 
-Keep your CSS clean and speed up your workflow.
+Ocelot.css help you to keep your CSS clean and speed up your workflow.
 
+From architecture to mixins, everything is done to speed up your workflow with the best practices in mind.
+
+## Table of contents
 * [Quick start](#quick-start)
-* About - wip
+* [What's included](#whats-included)
 * [Ressources](/doc/ressources.md)
-* Contributors - wip
+* [Creators](#creators)
+* [Copyright and license](#copyright-and-license)
 
----
+## Quick start
 
-### Quick start
+Download the project and get started.
 
+## What's included
 
-
-
-Included :
-- Reset
+- Architecture
+- CSS reset
 - Grid
-- Breakpoint
-- Margin
-- Color
+- Breakpoints management
+- Utilities class
+- And a lot of mixins
 
-Component :
-- Button
-- Forms
-- Link
-- Title
-
----
-
-### About
-
----
-
-### Ressources
+## Ressources
 
 This framework have been build with the help of thousand of articles and books that you can find [here](#) .
 
----
+## Creators
 
-### Contributors
+- [JACQUELIN Clément](http://twitter.com/jacquelinclem)
 
-- JACQUELIN Clément
+## Copyright and license
+
+Code released under the MIT License. Docs released under Creative Commons.
