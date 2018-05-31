@@ -2,7 +2,7 @@
 
 Keep your CSS clean and speed up your workflow.
 
-* Quick start - wip
+* [Quick start](#quick-start)
 * About - wip
 * [Ressources](/doc/ressources.md)
 * Contributors - wip
@@ -10,6 +10,9 @@ Keep your CSS clean and speed up your workflow.
 ---
 
 ### Quick start
+
+
+
 
 Included :
 - Reset
