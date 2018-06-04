@@ -1,0 +1,21 @@
+/* ===============
+   Center 
+   =============== */
+
+@mixin center($position: 'vertical') {
+    position: absolute;
+    
+    @if $position == 'vertical' {
+        @include translate(0, -50%);
+        top: 50%;
+    }
+    @else if $position == 'horizontal' {
+        @include translate(-50%, 0);
+        left: 50%;
+    }
+    @else if $position == 'both' {
+        @include translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+}

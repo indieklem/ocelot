@@ -1,0 +1,8 @@
+/* ===============
+   Font 
+   =============== */
+   
+@mixin font--size($value) {
+    font-size: ($value * 10) + px;
+    font-size: $value + rem;
+}
