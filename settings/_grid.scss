@@ -1,26 +1,23 @@
-/* ===============
-    Grid
-    =============== */
-
-
-.grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left: $spacer;
-    padding-right: $spacer;
-}
-
-
-
+/*!
+ * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
  @-ms-viewport {
   width: device-width;
 }
 
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 .container {
   width: 100%;
