@@ -1,8 +1,8 @@
 /* ===============
-   Center 
+   Align 
    =============== */
 
-@mixin center($position: 'vertical') {
+@mixin align($position: 'vertical') {
     position: absolute;
     
     @if $position == 'vertical' {

@@ -2,7 +2,7 @@
    Margins 
    =============== */
 
-@each $theBreakpoint in map-keys($breakpoints) {
+   @each $theBreakpoint in map-keys($breakpoints) {
     @include breakpoint($theBreakpoint) {
 
         $theAbbrev : map-get($breakpoints--abbrev, $theBreakpoint);
@@ -20,6 +20,24 @@
             .ml#{$theAbbrev}-#{$size} { 
                 margin-left: #{$length}!important;
             }
+            .my#{$theAbbrev}-#{$size} { 
+                margin-top: #{$length}!important;
+                margin-bottom: #{$length}!important
+            }
+            .mx#{$theAbbrev}-#{$size} { 
+                margin-left: #{$length}!important;
+                margin-right: #{$length}!important;
+            }
         }
+
+        .my-auto {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .mx-auto {
+            margin-top: auto !important;
+            margin-bottom: auto !important;
+        }
+
     }
 }

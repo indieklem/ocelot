@@ -1,11 +1,11 @@
 /* ===============
-   Main import 
+   Main file 
    =============== */
 
 @import 'var/var';
-@import 'settings/settings';
 @import 'mixins/mixins';
-// @import 'component/component';
+@import 'utilities/utilities';
+@import 'component/component';
 @import 'page/page';
 @import 'shame/shame';
 

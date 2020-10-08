@@ -37,6 +37,6 @@
 }
 
 .c-btn--disabled {
-    &.c-btn--white     {@include btn--disabled($color_white,    $color_grey,                  $color_grey_shady)}
+    //&.c-btn--white     {@include btn--disabled($color_white,    $color_grey,                  $color_grey_shady)}
 }
 

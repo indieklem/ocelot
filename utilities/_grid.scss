@@ -1,0 +1,40 @@
+/* ===============
+   Grid 
+   =============== */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  [class^="col"] {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  [class^="col-"] {
+    flex: none;
+  }
+}
+
+@each $theBreakpoint in map-keys($breakpoints) {
+  @include breakpoint($theBreakpoint) {
+
+      $theAbbrev : map-get($breakpoints--abbrev, $theBreakpoint);
+      .col#{$theAbbrev}-20 {width: 20%;}
+      .col#{$theAbbrev}-25 {width: 25%;}
+      .col#{$theAbbrev}-33 {width: 33%;}
+      .col#{$theAbbrev}-50 {width: 50%;}
+      .col#{$theAbbrev}-66 {width: 66%;}
+      .col#{$theAbbrev}-75 {width: 75%;}
+      .col#{$theAbbrev}-80 {width: 80%;}
+      .col#{$theAbbrev}-100 {width: 100%;}
+  }
+}

@@ -1,17 +1,31 @@
 /* ===============
+    Font face
+    =============== */
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../../fonts/WorkSans-Medium.woff2') format('woff2'),
+      url('../../fonts/WorkSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/* ===============
    Font var
    =============== */
 
-$font--light:   'comfortaalight';
-$font--regular: 'comfortaaregular';
-$font--bold:    'comfortaabold';
+$font--light:   'Work Sans';
+$font--regular: 'Work Sans';
+$font--bold:    'Work Sans';
 
 
 
 /* ===============
     Font size
     =============== */
-
 
 $font--base   :  1rem;
 $font--sizes: (
@@ -22,4 +36,3 @@ $font--sizes: (
   4: ($font--base * 1.5),
   5: ($font--base * 3)
 ) !default;
-

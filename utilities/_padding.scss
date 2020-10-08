@@ -1,0 +1,43 @@
+/* ===============
+   Paddings 
+   =============== */
+
+   @each $theBreakpoint in map-keys($breakpoints) {
+    @include breakpoint($theBreakpoint) {
+
+        $theAbbrev : map-get($breakpoints--abbrev, $theBreakpoint);
+
+        @each $size, $length in $spacers {
+            .pb#{$theAbbrev}-#{$size} { 
+                padding-bottom: #{$length}!important
+            }
+            .pt#{$theAbbrev}-#{$size} { 
+                padding-top: #{$length}!important
+            }
+            .pr#{$theAbbrev}-#{$size} { 
+                padding-right: #{$length}!important
+            }
+            .pl#{$theAbbrev}-#{$size} { 
+                padding-left: #{$length}!important;
+            }
+            .py#{$theAbbrev}-#{$size} { 
+                padding-top: #{$length}!important;
+                padding-bottom: #{$length}!important
+            }
+            .px#{$theAbbrev}-#{$size} { 
+                padding-left: #{$length}!important;
+                padding-right: #{$length}!important;
+            }
+        }
+
+        .py-auto {
+            padding-left: auto !important;
+            padding-right: auto !important;
+        }
+        .px-auto {
+            padding-top: auto !important;
+            padding-bottom: auto !important;
+        }
+
+    }
+}

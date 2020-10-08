@@ -33,5 +33,5 @@
 }
 
 .c-btn_is-loading {
-    &.c-btn_white     {@include is_loading($color_white,    $color_grey,                  $color_grey_shady)}
+    //&.c-btn_white     {@include is_loading($color_white,    $color_grey,                  $color_grey_shady)}
 }
