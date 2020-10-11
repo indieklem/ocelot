@@ -1,0 +1,17 @@
+/* ===============
+   Text size 
+   =============== */
+
+   @each $theBreakpoint in map-keys($breakpoints) {
+    @include breakpoint($theBreakpoint) {
+
+        $theAbbrev : map-get($breakpoints--abbrev, $theBreakpoint);
+
+        @each $name, $size in $font--sizes {
+            .txt#{$theAbbrev}-#{$name} { 
+                font-size: $size;
+                line-height: $size * 1.5;
+            }
+        }
+    }
+}

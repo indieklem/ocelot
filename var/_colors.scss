@@ -4,31 +4,25 @@
 
 $colors: (
     white: #fff,
-    grey: (
-        bright:#eee,
-        light: #ddd,
-        base:  #bfbfbf,
-        shady: #999,
-        dark:  #666
-    ),
-    black:     #222,
+    grey-bright:#eee,
+    grey-light: #ddd,
+    grey-base:  #A1A3A7,
+    grey-shady: #5A5E66,
+    grey-dark:  #292F38,
+    black:     #141924,
     red:       #f04134,
     green:     #51cf66,
-    social: (
-        dribbble: #ea4c89,
-        facebook: #3b5998,
-        instagram:#125688,
-        linkedin: #007bb6,
-        messenger:#0084ff,
-        pinterest:#cb2027,
-        slack:    #3aaf85,
-        spotify:  #00e461,
-        twitter:  #00aced,
-        whatsapp: #25D366,
-        wordpress:#21759b,
-        youtube:  #bb0000
-    ),
-    brand: (
-        green:#28C76F,
-    )
+    dribbble: #ea4c89,
+    facebook: #3b5998,
+    instagram:#125688,
+    linkedin: #007bb6,
+    messenger:#0084ff,
+    pinterest:#cb2027,
+    slack:    #3aaf85,
+    spotify:  #00e461,
+    twitter:  #00aced,
+    whatsapp: #25D366,
+    wordpress:#21759b,
+    youtube:  #bb0000,
+  
 ) !default;

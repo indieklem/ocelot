@@ -12,6 +12,10 @@
 html {
     font-size: 62.5%;
 }
+
 body {
     font-size: 1.6rem; /* base font-size is equivalent "14px" */
+    color: color(white);
+    background-color: color(black);
+    font-family: $font--regular;
 }

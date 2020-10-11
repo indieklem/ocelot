@@ -3,13 +3,24 @@
     =============== */
 
 @font-face {
-  font-family: 'Work Sans';
-  src: url('../../fonts/WorkSans-Medium.woff2') format('woff2'),
-      url('../../fonts/WorkSans-Medium.woff') format('woff');
-  font-weight: 500;
+  font-family: 'Work Sans Regular';
+  src: url('../../fonts/WorkSans-Regular.woff2') format('woff2'),
+      url('../../fonts/WorkSans-Regular.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Work Sans Medum';
+  src: url('../../fonts/WorkSans-Medium.woff2') format('woff2'),
+      url('../../fonts/WorkSans-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 
 
@@ -17,9 +28,9 @@
    Font var
    =============== */
 
-$font--light:   'Work Sans';
-$font--regular: 'Work Sans';
-$font--bold:    'Work Sans';
+$font--light:   'Work Sans Regular';
+$font--regular: 'Work Sans Regular';
+$font--bold:    'Work Sans Medium';
 
 
 
@@ -27,12 +38,11 @@ $font--bold:    'Work Sans';
     Font size
     =============== */
 
-$font--base   :  1rem;
+
 $font--sizes: (
-  0: 0,
-  1: ($font--base * .25),
-  2: ($font--base * .5),
-  3:  $font--base,
-  4: ($font--base * 1.5),
-  5: ($font--base * 3)
+  14: 1.4rem,
+  16: 1.6rem,
+  20: 2rem,
+  26: 2.6rem,
+  32: 3.2rem
 ) !default;

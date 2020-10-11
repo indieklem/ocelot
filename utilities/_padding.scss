@@ -28,6 +28,9 @@
                 padding-left: #{$length}!important;
                 padding-right: #{$length}!important;
             }
+            .p#{$theAbbrev}-#{$size} { 
+                padding: #{$length}!important;
+            }
         }
 
         .py-auto {
